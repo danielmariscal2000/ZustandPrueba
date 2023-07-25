@@ -1,13 +1,14 @@
 import style from "./Card/card.module.css";
 import { userCounter } from "../store/counter";
 import { useState } from "react";
+import { ChangeEvent } from 'react';
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Card(props: any) {
   const [editText, setEditText] = useState("");
   const title: string = props.element.title.toUpperCase();
   const { clearStoreId, onChangePost } = userCounter();
 
-  const handleOnChange = (e) => {
+  const handleOnChange = (e:ChangeEvent<HTMLInputElement>) => {
     setEditText(e.target.value);
     onChangePost(e.target.value, props.element.id);
   };
