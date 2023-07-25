@@ -1,0 +1,13 @@
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    text-align: center;
+    margin: 50px;
+
+}
