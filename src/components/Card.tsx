@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Card/card.module.css";
 import { userCounter } from "../store/counter";
 import { useState } from "react";
